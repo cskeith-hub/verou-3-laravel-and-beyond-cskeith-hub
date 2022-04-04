@@ -1,3 +1,36 @@
 body {
-  background-color: hotpink;
+  background-color: gray;
+}
+
+.border, .brandContainer, .menuContainer, .contactInfo, .addSection {
+  border: 1px solid black;
+}
+
+header {
+  display: flex;
+  box-sizing: border-box;
+  width: auto;
+}
+header .brandContainer {
+  width: 50%;
+  text-align: center;
+}
+header .menuContainer {
+  width: 50%;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+footer {
+  display: flex;
+  box-sizing: border-box;
+  width: auto;
+}
+footer .contactInfo {
+  width: 50%;
+}
+footer .addSection {
+  width: 50%;
+  text-align: center;
+  padding-top: 3.5rem;
 }

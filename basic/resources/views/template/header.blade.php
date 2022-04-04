@@ -2,9 +2,8 @@
     <div class="brandContainer">
         <strong><p>BRAND</p></strong>
     </div>
-    <div class="menuContrainer">
-        <MENU>
+    <div class="menuContainer">
         <div class="dropDown">MENU</div>
-        </MENU>
+        <a href="contactPage">CONTACT ME</a>
     </div>
     </header>
