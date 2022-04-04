@@ -28,11 +28,12 @@
             <li>Email:</li>
             <li>cskeith01@gmail.com</li>
             <br>
+            <li>Adres:</li>
+            <li>Schommelstraat 71 9000</li>
+            <br>
             <li>Location:</li>
             <li>Ghent, Belgium</li>
-            <br>
-            <li>Adres:</li>
-            <li>Schommelstraat 71</li>
+            <br> 
         </ul>
     </div>
     <br>

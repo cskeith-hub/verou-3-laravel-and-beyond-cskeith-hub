@@ -8,7 +8,7 @@ body {
   width: 100vw;
 }
 
-.border, .brandContainer, .menuContainer, .copyRight, .addSection {
+.border, .brandContainer, .menuContainer {
   border: 1px solid black;
 }
 
@@ -78,16 +78,26 @@ footer {
   display: flex;
   box-sizing: border-box;
   width: auto;
+  border-top: 1px solid black;
 }
 footer .copyRight {
   width: 50%;
-  height: 2rem;
+  height: 3rem;
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
 }
-footer .addSection {
+footer .socialMedia {
+  display: flex;
   width: 50%;
-  height: 2rem;
+  height: 4rem;
   text-align: center;
-  padding-top: 1rem;
+  justify-content: center;
+}
+footer .socialMedia .gitHub {
+  width: 60px;
+  padding-top: 0.2rem;
+}
+footer .socialMedia .linkedIn {
+  width: 60px;
+  padding-top: 0.2rem;
 }
