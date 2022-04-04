@@ -1,6 +1,6 @@
 <header>
     <div class="brandContainer">
-        <strong><p>BRAND</p></strong>
+        <a href="/">BRAND</a>
     </div>
     <div class="menuContainer">
         <div class="dropDown">MENU</div>

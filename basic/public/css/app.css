@@ -1,9 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: gray;
+  width: 100vw;
 }
 
 .border, .brandContainer, .menuContainer, .contactInfo, .addSection {
   border: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 header {
@@ -14,11 +25,22 @@ header {
 header .brandContainer {
   width: 50%;
   text-align: center;
+  padding-top: 1rem;
 }
 header .menuContainer {
   width: 50%;
   text-align: center;
   padding-top: 1rem;
+}
+
+.mapView {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  margin-left: 0.4rem;
+  height: auto;
+  border: 1px solid black;
+  overflow: hidden;
 }
 
 footer {
@@ -28,9 +50,11 @@ footer {
 }
 footer .contactInfo {
   width: 50%;
+  text-align: center;
+  padding-top: 1rem;
 }
 footer .addSection {
   width: 50%;
   text-align: center;
-  padding-top: 3.5rem;
+  padding-top: 1.5rem;
 }
