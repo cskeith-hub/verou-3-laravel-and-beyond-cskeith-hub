@@ -1,5 +1,5 @@
 <footer>
-    <div class="contactInfo">
+    <div class="copyRight">
         <p>&copy; 2022 Colin Renkema</p>
     </div>
     

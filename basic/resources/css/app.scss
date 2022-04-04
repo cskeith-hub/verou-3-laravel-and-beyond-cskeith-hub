@@ -6,13 +6,18 @@ body{
     background-color: gray; 
     width: 100vw;  
 }
-.border, .brandContainer, .menuContainer, .contactInfo, .addSection{
+.border, .brandContainer, .menuContainer, .copyRight, .addSection{
     border: 1px solid black;
 }
 a{
     text-decoration: none;
     color: black;
 }
+
+ul{
+    list-style-type: none;
+}
+
 header{
     display: flex;
     box-sizing: border-box;
@@ -30,6 +35,10 @@ header{
     }
 }
 
+.contactWelcome{
+    text-align: center;
+}
+
 .mapView{
     display: flex;
     justify-content: center;
@@ -40,19 +49,50 @@ header{
     overflow: hidden;
 }
 
+
+
+.contactInfoContainer{
+    display: flex;
+    justify-content: center;
+
+    .contactInfo{
+        text-align: center;
+        width: 45%;
+        margin-right: 0.5rem;
+
+        .profilePicture{
+            width: 60px;
+            height: 60px;
+            margin-left: 2.5rem;
+            border: 1px solid black;
+            border-radius: 50%;
+            overflow: hidden;
+            
+        }
+    }
+
+    .contactForm{
+        text-align: center;
+        width: 45%;
+        overflow: hidden;
+    }
+}
+
 footer{
     display: flex;
     box-sizing: border-box;
     width: auto;
 
-    .contactInfo{
+    .copyRight{
         width: 50%;
+        height: 2rem;
         text-align: center;
         padding-top: 1rem;
     }
     .addSection{
         width: 50%;
+        height: 2rem;
         text-align: center;
-        padding-top: 1.5rem;
+        padding-top: 1rem;
     }
 }
