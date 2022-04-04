@@ -1,9 +1,8 @@
 <header>
     <div class="brandContainer">
-        <a href="/">BRAND</a>
+        <strong><a href="/">ABOUT ME</a></strong>
     </div>
     <div class="menuContainer">
-        <div class="dropDown">MENU</div>
-        <a href="contactPage">CONTACT ME</a>
+        <strong><a href="contactPage">CONTACT ME</a></strong>
     </div>
-    </header>
+</header>

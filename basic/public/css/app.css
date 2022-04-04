@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,9 +10,28 @@ body {
   width: 100vw;
 }
 
-.border, .brandContainer, .menuContainer {
-  border: 3px solid black;
+.border, .brandContainer, .menuContainer, input, textarea {
+  border: 3px solid rgb(23, 22, 22);
   border-radius: 5%;
+}
+
+input, textarea {
+  border: 2px solid rgb(23, 22, 22);
+  border-radius: 5%;
+}
+
+textarea {
+  margin-bottom: 0.5rem;
+}
+
+li {
+  height: 2.3rem;
+  border-bottom: 2px solid rgb(23, 22, 22);
+  border-radius: 5%;
+  box-shadow: 3px 1px;
+  padding-top: 0.5rem;
+  text-align: center;
+  justify-self: center;
 }
 
 a {
@@ -25,18 +45,15 @@ ul {
 
 header {
   display: flex;
-  box-sizing: border-box;
+  justify-content: center;
   width: auto;
 }
-header .brandContainer {
-  width: 50%;
+header .brandContainer, header .menuContainer {
+  width: 40%;
+  height: 2.5rem;
+  padding-top: 0.5rem;
   text-align: center;
-  padding-top: 1rem;
-}
-header .menuContainer {
-  width: 50%;
-  text-align: center;
-  padding-top: 1rem;
+  margin: 0.5rem;
 }
 
 .contactWelcome {
@@ -60,21 +77,23 @@ header .menuContainer {
 }
 .contactInfoContainer .contactInfo {
   text-align: center;
-  width: 45%;
+  width: 50%;
   margin-right: 0.5rem;
 }
 .contactInfoContainer .contactInfo .profilePicture {
   width: 60px;
   height: 60px;
   margin-left: 2.5rem;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 50%;
   overflow: hidden;
+  margin-bottom: 0.5rem;
 }
 .contactInfoContainer .contactForm {
   text-align: center;
   width: 45%;
   overflow: hidden;
+  margin-top: 4.2rem;
 }
 
 #name {
@@ -89,13 +108,12 @@ footer {
   display: flex;
   box-sizing: border-box;
   width: auto;
-  border-top: 1px solid black;
 }
 footer .copyRight {
   width: 50%;
   height: 3rem;
   text-align: center;
-  padding-top: 1.5rem;
+  padding-top: 0.8rem;
 }
 footer .socialMedia {
   display: flex;
