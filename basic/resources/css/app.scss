@@ -5,10 +5,15 @@
     box-sizing: border-box;
 }
 body{
-    background-color: gray; 
+    background-color: rgba(139, 194, 192, 0.71); 
     width: 100vw;  
 }
-.border, .brandContainer, .menuContainer, input, textarea{
+.border, 
+.brandContainer, 
+.menuContainer, 
+input,
+textarea, 
+.field{
     border: 3px solid rgb(23, 22, 22);
     border-radius: 5%;
 }
@@ -27,6 +32,7 @@ li{
     padding-top: 0.5rem;
     text-align:center;
     justify-self: center;
+    white-space: normal;
 }
 a{
     text-decoration: none;
@@ -105,6 +111,70 @@ header{
     text-align: center;
     // text-shadow: 2px 2px #1f1308e7;
 
+    
+}
+
+.field{
+    border: solid rgb(47, 43, 23);
+    background-color: black;
+    color: antiquewhite;
+    width: 95%;
+    height: 600px;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    padding-top: 1rem;
+    .frame{
+        display: flex;
+        justify-content: center;
+        .frontEnd{
+            margin-right: 0.5rem;
+            margin-top: 0.5rem;
+            .left{
+                background-color: silver;
+                border: 1px solid gray;
+                border-radius: 12%;
+                width: 4rem;
+                height: 0.9rem;
+            }
+            
+        }
+        .backEnd{
+            margin-left: 0.5rem;
+            margin-top: 0.5rem;
+            .right{
+                background-color: silver;
+                border: 1px solid gray;
+                border-radius: 12%;
+                width: 4rem;
+                height: 0.9rem;
+            }
+        }
+    }
+    .frameOne{
+        border: 2px solid rgb(186, 184, 176);
+        border-radius: 5%;
+        width: 95%;
+        height: 80%;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        .dbContent{
+            text-align: center;
+            margin-top: 12rem;
+        }
+    }
+    .menuBar{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 1.2rem;
+        .reverse, .upButton, .forward{
+            width: 3rem;
+            text-align: center;
+            border: 1px solid gray;
+            border-radius: 18%;
+            box-shadow: 3px 3px gray;
+        }
+    }
+    
     
 }
 

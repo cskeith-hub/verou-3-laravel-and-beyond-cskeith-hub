@@ -16,15 +16,15 @@
             <img src="{{ url('storage/img/colinProfile60px.jpg') }}" alt="Profile Picture" />
         </div>
         <ul>
-            <li>Contact:</li>
+            <strong><li>Contact:</li></strong>
             <li>Colin Renkema</li>
-            <li>Telefoon Number:</li>
+            <strong><li>Telefoon Number:</li></strong>
             <li>+32-476361577</li>
-            <li>Email:</li>
+            <strong><li>Email:</li></strong>
             <li>cskeith01@gmail.com</li>
-            <li>Adres:</li>
+            <strong><li>Adres:</li></strong>
             <li>Schommelstraat 71</li>
-            <li>Location:</li>
+            <strong><li>Location:</li></strong>
             <li>Ghent, Belgium</li>
         </ul>
     </div>
