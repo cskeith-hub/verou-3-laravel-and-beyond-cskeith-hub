@@ -35,11 +35,13 @@
         <div class="reverse">
             {{-- TODO Research this --}}
           {{-- <a href="{{route('previous',['id'=>$user->previous()])}}">Previous</a> --}}
+          Back
         </div>
         <div class="upButton">Up</div>
         <div class="forward"> 
             {{-- TODO and Research this --}}
             {{-- <a href="{{route('next',['id'=>$user->next()])}}">Next</a> --}}
+            Next
         </div>
     </div>
     
