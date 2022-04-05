@@ -32,17 +32,17 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
-
-    public function next()
-    {
-        $user = User::where("id", ">", $this->id)->orderBy("id", "asc")->first();
-        return $user->id;
-    }
-    public function previous()
-    {
-        $user = User::where("id", "<", $this->id)->orderBy("id", "desc")->first();
-        return $user->id;
-    }
+    //TODO check if eloquent still works
+    // public function next()
+    // {
+    //     $user = User::where("id", ">", $this->id)->orderBy("id", "asc")->first();
+    //     return $user->id;
+    // }
+    // public function previous()
+    // {
+    //     $user = User::where("id", "<", $this->id)->orderBy("id", "desc")->first();
+    //     return $user->id;
+    // }
 
     /**
      * The attributes that should be cast.

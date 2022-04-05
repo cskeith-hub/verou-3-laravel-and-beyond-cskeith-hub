@@ -16,6 +16,7 @@ use App\Http\Controllers\ContactController;
 |
 */
 Route::get('/', [Controller::class, 'index']);
-Route::get('/{id}', [Controller::class, 'nextUser'])->name('next');
+//TODO Check if the routes contains data
+// Route::get('/{id}', [Controller::class, 'nextUser'])->name('next');
 // Route::get('/{id}', [Controller::class, 'previousUser'])->name('previous');
 Route::get('/contactPage', [ContactController::class, 'contactPage']);

@@ -15,21 +15,22 @@ class Controller extends BaseController
 
     public function index()
     {
-        $user = User::find(1);
+        $user = User::find(9);
         return view ('home', ['user'=>$user]);
     }
+    //TODO check if methods receive $id
 
-    public function nextUser($id)
-    {
-        $user = User::find($id);
-        return view ('home', ['user'=>$user]);
-    }
+    // public function nextUser($id)
+    // {
+    //     $user = User::find($id);
+    //     return view ('home', ['user'=>$user]);
+    // }
 
-    public function previousUser($id)
-    {
-        $user = User::find($id);
-        return view ('home', ['user'=>$user]);
-    }
+    // public function previousUser($id)
+    // {
+    //     $user = User::find($id);
+    //     return view ('home', ['user'=>$user]);
+    // }
 
     
 }
