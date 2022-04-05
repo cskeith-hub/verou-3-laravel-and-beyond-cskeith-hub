@@ -32,9 +32,13 @@
         </div>
     </div>
     <div class="menuBar">
-        <div class="reverse">Back</div>
+        <div class="reverse">
+          <a href="{{route('previous',['id'=>$user->previous()])}}">Previous</a>
+        </div>
         <div class="upButton">Up</div>
-        <div class="forward">Next</div>
+        <div class="forward"> 
+            <a href="{{route('next',['id'=>$user->next()])}}">Next</a>
+        </div>
     </div>
     
     

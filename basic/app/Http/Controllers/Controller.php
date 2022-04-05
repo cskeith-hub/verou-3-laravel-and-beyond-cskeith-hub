@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use App\Models\Hobby;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -16,7 +15,21 @@ class Controller extends BaseController
 
     public function index()
     {
-        $user = User::find(2);
+        $user = User::find(1);
         return view ('home', ['user'=>$user]);
     }
+
+    public function nextUser($id)
+    {
+        $user = User::find($id);
+        return view ('home', ['user'=>$user]);
+    }
+
+    public function previousUser($id)
+    {
+        $user = User::find($id);
+        return view ('home', ['user'=>$user]);
+    }
+
+    
 }

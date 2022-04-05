@@ -15,6 +15,7 @@ use App\Http\Controllers\ContactController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', [Controller::class, 'index']);
+Route::get('/{id}', [Controller::class, 'nextUser'])->name('next');
+// Route::get('/{id}', [Controller::class, 'previousUser'])->name('previous');
 Route::get('/contactPage', [ContactController::class, 'contactPage']);
