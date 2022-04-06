@@ -23,12 +23,20 @@
     </div>
     <div class="frameOne">
         <div class="dbContent">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p> Add a photo of the user</p>
+            <br>
             {{-- <img src="{{ url('storage/img/wallpaper.jpg') }}" alt="wallpaper" /> --}}
             <p> Hello my name is {{$user->first_name}} {{$user->last_name}}.</p><br>
             <p> I live on {{$user->address}}.</p><br>
             <p> If u need a Developer u can Contact me.</p><br>
             <p>My phone number is {{$user->phone}}.</p><br>
             <p> Or u can send a mail to {{$user->email}}.</p><br>
+            <br>
         </div>
     </div>
     <div class="menuBar">

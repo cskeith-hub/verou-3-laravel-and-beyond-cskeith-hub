@@ -3,6 +3,6 @@
         <strong><a href="/">ABOUT ME</a></strong>
     </div>
     <div class="menuContainer">
-        <strong><a href="contactPage">CONTACT ME</a></strong>
+        <strong><a href="{{route('contactPage')}}">CONTACT ME</a> </strong>
     </div>
 </header>

@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: aliceblue;
+    background-color: gray;
     width: 100vw;
 }
 
@@ -188,9 +188,12 @@ background: linear-gradient(211deg, rgba(17,16,18,1) 0%, rgba(68,68,193,0.748336
         margin-left: 0.5rem;
 
         .dbContent {
+            overflow: hidden;
             text-align: center;
             margin-top: 0.5rem;
+            
         }
+       
     }
 
     .menuBar {
@@ -206,6 +209,9 @@ background: linear-gradient(211deg, rgba(17,16,18,1) 0%, rgba(68,68,193,0.748336
             border: 1px solid gray;
             border-radius: 18%;
             box-shadow: -1px -1px 1px 1px rgba(177, 164, 164, 0.508);
+            a{
+                color: white;
+            }
         }
     }
 
