@@ -2,7 +2,7 @@
 
 @section('body')
 <div id="name">
-       
+
     <h1>
         <i class="material-icons">computer</i>
         Colin Renkema
@@ -33,19 +33,17 @@
     </div>
     <div class="menuBar">
         <div class="reverse">
-            {{-- TODO Research this --}}
-          {{-- <a href="{{route('previous',['id'=>$user->previous()])}}">Previous</a> --}}
-          Back
+            <a href="{{route('user',['id'=>$previous])}}">Back</a>  
         </div>
+        <br>
         <div class="upButton">Up</div>
-        <div class="forward"> 
-            {{-- TODO and Research this --}}
-            {{-- <a href="{{route('next',['id'=>$user->next()])}}">Next</a> --}}
-            Next
+        <br>
+        <div class="forward">
+            <a href="{{route('user',['id'=>$next])}}">Next</a>
         </div>
     </div>
-    
-    
-   
+
+
+
 </div>
 @endsection

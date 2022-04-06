@@ -15,22 +15,39 @@ class Controller extends BaseController
 
     public function index()
     {
-        $user = User::find(9);
-        return view ('home', ['user'=>$user]);
+        $user = User::find(1);
+        return redirect()->route('user', ['id'=>$user->id]);
     }
-    //TODO check if methods receive $id
 
-    // public function nextUser($id)
-    // {
-    //     $user = User::find($id);
-    //     return view ('home', ['user'=>$user]);
-    // }
+    public function user($id)
+    {
+        $user = User::find($id);
+        $previous = User::where("id", "<", $id)
+        ->orderBy("id", "desc")
+        ->first();
+     if ($previous === null) {
+        $previous = User::where("id", ">", $id)
+            ->orderBy("id", "asc")
+            ->get()
+            ->last();
+    }
 
-    // public function previousUser($id)
-    // {
-    //     $user = User::find($id);
-    //     return view ('home', ['user'=>$user]);
-    // }
+    // get next user id
+    $next = User::where("id", ">", $id)
+        ->orderBy("id", "asc")
+        ->first();
+        if ($next === null) {
+        $next = User::where("id", "<", $id)
+            ->orderBy("id", "desc")
+            ->get()
+            ->last();
+    }
+     return view("home")
+        ->with("previous", $previous)
+        ->with("next", $next)
+        ->with("user", $user);
+    }
+    
 
     
 }
