@@ -10,21 +10,41 @@
     <img src="{{ url('storage/img/schommelstraat71.png') }}" alt="Map view schommelstraat" />
 </div>
 <br>
+
+<div class="alertS">
+    @if(session()->has('message'))
+        <div class="alert alert-success">
+            {{ session()->get('message') }}
+        </div>
+    @endif
+</div>
 <div class="contactInfoContainer">
     <div class="contactInfo">
-        <div class="profilePicture">
-            <img src="{{ url('storage/img/colinProfile60px.jpg') }}" alt="Profile Picture" />
+        <div class="midSection">
+            <div class="profilePicture">
+                <img src="{{ url('storage/img/colinProfile60px.jpg') }}" alt="Profile Picture" />
+            </div>
         </div>
         <ul>
-            <strong><li>Contact:</li></strong>
+            <strong>
+                <li>Contact:</li>
+            </strong>
             <li>Colin Renkema</li>
-            <strong><li>Telefoon Number:</li></strong>
+            <strong>
+                <li>Telefoon Number:</li>
+            </strong>
             <li>+32-476361577</li>
-            <strong><li>Email:</li></strong>
+            <strong>
+                <li>Email:</li>
+            </strong>
             <li>cskeith01@gmail.com</li>
-            <strong><li>Adres:</li></strong>
+            <strong>
+                <li>Adres:</li>
+            </strong>
             <li>Schommelstraat 71</li>
-            <strong><li>Location:</li></strong>
+            <strong>
+                <li>Location:</li>
+            </strong>
             <li>Ghent, Belgium</li>
         </ul>
     </div>

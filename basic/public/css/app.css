@@ -80,6 +80,19 @@ header .menuContainer {
   overflow: hidden;
 }
 
+.alertS {
+  color: yellow;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.alertS .alert {
+  width: 85%;
+  border: 1.6px solid yellow;
+  background-color: rgb(32, 33, 33);
+  border-radius: 5%;
+  margin-left: 1.4rem;
+}
+
 .contactInfoContainer {
   display: flex;
   justify-content: center;
