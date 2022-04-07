@@ -17,6 +17,7 @@ use App\Http\Controllers\ContactController;
 */
 Route::get('/', [Controller::class, 'index']);
 Route::get('contactPage', [ContactController::class, 'contactPage'])->name('contactPage');
+Route::post('/contactQuestion', [ContactController::class, 'contactPost']);
 Route::get('/{id}', [Controller::class, 'user'])->name('user');
 
 

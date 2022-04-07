@@ -31,7 +31,7 @@
     <br>
     <div class="contactForm">
         <form action="contactQuestion" method="post">
-
+            @csrf
             <label for="fname">First Name:</label><br>
             <input type="text" id="fname" name="firstname">
             <br>
@@ -47,7 +47,7 @@
             <label for="subject">Question</label><br>
             <textarea id="subject" name="subject" placeholder="Ask your Question.." style="height:200px"></textarea>
             <br>
-            <input type="submit" value="Submit">
+            <input type="submit" id="submit" name="submit" value="submit">
             <br>
         </form>
         <br>
