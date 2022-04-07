@@ -30,6 +30,6 @@ class ContactController extends Controller
 
         $question->save();
 
-        return redirect()->back()->with('message', 'Your Question Has Arrived! Response Follows Soon.');
+        return redirect()->back()->with('message', 'Your question has arrived! Response follows soon.');
     }
 }

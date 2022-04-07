@@ -8,7 +8,7 @@
         Colin Renkema
         <i class="material-icons">computer</i>
     </h1>
-    <p>Learning FullStack WebDevelopment</p>
+    <p>Learning Full Stack Web Development</p>
     <br>
     <h6>Mobile First</h6>
 </div>
@@ -32,10 +32,10 @@
             <br>
             {{-- <img src="{{ url('storage/img/wallpaper.jpg') }}" alt="wallpaper" /> --}}
             <p> Hello my name is {{$user->first_name}} {{$user->last_name}}.</p><br>
-            <p> I live on {{$user->address}}.</p><br>
-            <p> If u need a Developer u can Contact me.</p><br>
+            <p> I live at {{$user->address}}.</p><br>
+            <p> If you need a developer you can contact me.</p><br>
             <p>My phone number is {{$user->phone}}.</p><br>
-            <p> Or u can send a mail to {{$user->email}}.</p><br>
+            <p> Or you can send a mail to {{$user->email}}.</p><br>
             <br>
         </div>
     </div>

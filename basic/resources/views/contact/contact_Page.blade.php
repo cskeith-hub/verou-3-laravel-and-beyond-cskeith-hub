@@ -27,11 +27,11 @@
         </div>
         <ul>
             <strong>
-                <li>Contact:</li>
+                <li>Name:</li>
             </strong>
             <li>Colin Renkema</li>
             <strong>
-                <li>Telefoon Number:</li>
+                <li>Telephone Number:</li>
             </strong>
             <li>+32-476361577</li>
             <strong>
@@ -39,11 +39,11 @@
             </strong>
             <li>cskeith01@gmail.com</li>
             <strong>
-                <li>Adres:</li>
+                <li>Address:</li>
             </strong>
             <li>Schommelstraat 71</li>
             <strong>
-                <li>Location:</li>
+                <li>Country:</li>
             </strong>
             <li>Ghent, Belgium</li>
         </ul>
@@ -64,7 +64,7 @@
             <input type="text" id="email" name="email">
             <br>
 
-            <label for="subject">Question</label><br>
+            <label for="subject">Question:</label><br>
             <textarea id="subject" name="subject" placeholder="Ask your Question.." style="height:200px"></textarea>
             <br>
             <input type="submit" id="submit" name="submit" value="submit">
