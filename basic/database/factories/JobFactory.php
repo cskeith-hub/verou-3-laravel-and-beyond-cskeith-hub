@@ -19,6 +19,7 @@ class JobFactory extends Factory
         return [
             'title' => $this->faker->name(),
             'description' => $this->faker->text(),
+            'user_id' => $this->faker->randomDigitNotNull(),
         ];
     }
 }

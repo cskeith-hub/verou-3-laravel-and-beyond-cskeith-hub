@@ -33,7 +33,7 @@
             <strong>
                 <li>Telephone Number:</li>
             </strong>
-            <li>+32-476361577</li>
+            <li>+32 4 76 36 15 77</li>
             <strong>
                 <li>Email:</li>
             </strong>

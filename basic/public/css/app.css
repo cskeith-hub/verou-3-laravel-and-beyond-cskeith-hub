@@ -32,7 +32,7 @@ textarea {
 
 li {
   height: 2.3rem;
-  border-bottom: 2px solid rgb(23, 22, 22);
+  border-right: 2px solid rgb(23, 22, 22);
   border-radius: 5%;
   box-shadow: 3px 1px;
   padding-top: 0.5rem;
@@ -101,6 +101,9 @@ header .menuContainer {
   text-align: center;
   width: 50%;
   margin-right: 0.5rem;
+}
+.contactInfoContainer .contactInfo .midSection {
+  margin-left: 0.8rem;
 }
 .contactInfoContainer .contactInfo .profilePicture {
   width: 60px;
@@ -181,11 +184,21 @@ header .menuContainer {
   height: 85%;
   margin-top: 1rem;
   margin-left: 0.5rem;
+  overflow: scroll;
 }
 .field .frameOne .dbContent {
   overflow: hidden;
   text-align: center;
   margin-top: 0.5rem;
+}
+.field .frameOne .dbContent .profilePic {
+  width: 60px;
+  height: 60px;
+  margin-left: 7rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
 }
 .field .menuBar {
   display: flex;

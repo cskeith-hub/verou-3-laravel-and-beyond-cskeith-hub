@@ -37,7 +37,6 @@ class User extends Authenticatable
     {
         return $this->hasMany(Job::class);
     }
-
     /**
      * The attributes that should be cast.
      *
