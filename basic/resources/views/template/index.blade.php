@@ -8,6 +8,9 @@
     <link href="{{ asset("css/app.css") }}" rel='stylesheet' type='text/css' />
     {{-- <link rel="stylesheet" href="css/app.css"> --}}
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="description" content="Becode project to learn web developmet">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Php, Laravel">
+    <meta name="author" content="Colin Renkema">
     
 </head>
 <body>

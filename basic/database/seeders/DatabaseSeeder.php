@@ -3,12 +3,10 @@
 namespace Database\Seeders;
 
 use App\Models\Contactform;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Illuminate\Database\Seeder;
-use App\Models\User;
-use App\Models\Job;
 use App\Models\Hobby;
-
+use App\Models\Job;
+use App\Models\User;
+use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {

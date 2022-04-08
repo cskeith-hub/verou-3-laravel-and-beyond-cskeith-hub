@@ -21,7 +21,7 @@ class ContactformFactory extends Factory
             'last_name' => $this->faker->lastName(),
             'email' => $this->faker->email(),
             'email_verified_at' => now(),
-            'question' => $this->faker->text()
+            'question' => $this->faker->text(),
         ];
     }
 }
