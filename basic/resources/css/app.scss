@@ -3,10 +3,13 @@
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
+
 }
 
 body {
-    background-color: gray;
+    background: hsla(148, 89%, 78%, 1);
+
+    background: linear-gradient(225deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
     width: 100vw;
 }
 
@@ -59,6 +62,8 @@ header {
     .brandContainer,
     .menuContainer {
         border: 3px solid black;
+        box-shadow: 1px 1px black;
+        text-shadow: 0.5px 0.5px black;
         width: 40%;
         height: 2.5rem;
         padding-top: 0.5rem;
@@ -75,22 +80,56 @@ header {
     display: flex;
     justify-content: center;
     width: 95%;
-    margin-left: 0.4rem;
+    margin-left: 0.5rem;
     height: auto;
     border: 3px solid black;
     border-radius: 5%;
     overflow: hidden;
 }
-.alertS{
+@media only screen and (min-width: 425px) {
+    .mapView {
+        margin-left: 0.7rem;
+    }
+}
+@media only screen and (min-width: 685px) {
+    .mapView {
+        width:652px;
+        margin-left: 3.5rem;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .mapView {
+        width:652px;
+        margin-left: 11rem;
+    }
+}
+
+.alertS {
     color: yellow;
     text-align: center;
     margin-bottom: 0.5rem;
-    .alert{
+
+    .alert {
         width: 85%;
         border: 1.6px solid yellow;
         background-color: rgb(32, 33, 33);
         border-radius: 5%;
         margin-left: 1.4rem;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .alertS {
+        color: yellow;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    
+        .alert {
+            width: 50%;
+            border: 1.5px solid yellow;
+            background-color: rgb(32, 33, 33);
+            border-radius: 5%;
+            margin-left: 12rem;
+        }
     }
 }
 .contactInfoContainer {
@@ -101,10 +140,11 @@ header {
         text-align: center;
         width: 50%;
         margin-right: 0.5rem;
-       .midSection{
-           margin-left: 0.8rem;
-       } 
-        .profilePicture, {
+
+        .midSection {
+            margin-left: 0.8rem;
+        }
+        .profilePicture {
             width: 60px;
             height: 60px;
             margin-left: 2.5rem;
@@ -120,6 +160,40 @@ header {
         width: 45%;
         overflow: hidden;
         margin-top: 4.2rem;
+    }
+    @media only screen and (min-width: 768px) {
+        .contactInfo {
+            text-align: center;
+            width: 25%;
+            margin-right: 0.5rem;
+            margin-left: 3rem;
+            .profilePicture {
+                width: 60px;
+                height: 60px;
+                margin-left: 3rem;
+                border: 2px solid black;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+    @media only screen and (min-width: 1024px) {
+        .contactInfo {
+            text-align: center;
+            width: 25%;
+            margin-right: 0.5rem;
+            margin-left: 3rem;
+            .profilePicture {
+                width: 60px;
+                height: 60px;
+                margin-left: 3rem;
+                border: 2px solid black;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-bottom: 0.5rem;
+            }
+        }
     }
 }
 
@@ -139,8 +213,8 @@ header {
     box-shadow: 0.3rem 0.3rem black;
     background: rgb(98, 97, 103);
     background: rgb(57, 56, 61);
-    background: rgb(17,16,18);
-background: linear-gradient(5deg, rgba(17,16,18,1) 0%, rgba(23,23,24,0.7483368347338936) 51%, rgba(0,0,0,1) 73%, rgba(22,23,23,1) 100%);
+    background: rgb(17, 16, 18);
+    background: linear-gradient(5deg, rgba(17, 16, 18, 1) 0%, rgba(23, 23, 24, 0.7483368347338936) 51%, rgba(0, 0, 0, 1) 73%, rgba(22, 23, 23, 1) 100%);
     color: antiquewhite;
     width: 95%;
     height: 600px;
@@ -187,8 +261,8 @@ background: linear-gradient(5deg, rgba(17,16,18,1) 0%, rgba(23,23,24,0.748336834
 
     .frameOne {
         background: rgb(2, 0, 36);
-        background: rgb(17,16,18);
-background: linear-gradient(211deg, rgba(17,16,18,1) 0%, rgba(68,68,193,0.7483368347338936) 51%, rgba(95,95,199,1) 73%, rgba(22,23,23,1) 100%);
+        background: rgb(17, 16, 18);
+        background: linear-gradient(211deg, rgba(17, 16, 18, 1) 0%, rgba(68, 68, 193, 0.7483368347338936) 51%, rgba(95, 95, 199, 1) 73%, rgba(22, 23, 23, 1) 100%);
         color: wheat;
         border: 2px solid rgba(186, 184, 176, 0.611);
         border-radius: 5%;
@@ -196,48 +270,77 @@ background: linear-gradient(211deg, rgba(17,16,18,1) 0%, rgba(68,68,193,0.748336
         height: 85%;
         margin-top: 1rem;
         margin-left: 0.5rem;
-        overflow: scroll;
-
-        .dbContent {
-            overflow: hidden;
-            text-align: center;
-            margin-top: 0.5rem;
-            .profilePic{
-                width: 60px;
-            height: 60px;
-            margin-left: 7rem;
-            border: 2px solid black;
-            border-radius: 50%;
-            overflow: hidden;
-            margin-bottom: 0.5rem;
-            }
-            
-        }
-       
+        overflow-y: scroll;
+        /* Add the ability to scroll */
     }
 
-    .menuBar {
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 1rem;
-
-        .reverse,
-        .upButton,
-        .forward {
-            width: 3rem;
-            text-align: center;
-            border: 1px solid gray;
-            border-radius: 18%;
-            box-shadow: -1px -1px 1px 1px rgba(177, 164, 164, 0.508);
-            a{
-                color: white;
-            }
-        }
+    .dbContent {
+        overflow: hidden;
+        text-align: center;
+        margin-top: 0.5rem;
+        margin: 10px;
     }
-
 
 }
 
+@media only screen and (min-width: 420px) {
+    .frameOne {
+        margin-left: 0.6rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .frameOne {
+        margin-left: 1.2rem;
+        border-radius: 16px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .frameOne {
+        margin-left: 1.6rem;
+    }
+}
+
+.menuBar {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+
+    .reverse,
+    .upButton,
+    .forward {
+        width: 3rem;
+        text-align: center;
+        border: 1px solid gray;
+        border-radius: 18%;
+        box-shadow: -1px -1px 1px 1px rgba(177, 164, 164, 0.508);
+
+        a {
+            color: white;
+        }
+    }
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .field {
+        margin-left: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .field {
+        margin-left: 1.6rem;
+        border-radius: 16px;
+
+        .frameOne {
+            border-radius: 16px;
+        }
+    }
+}
 
 footer {
     display: flex;
