@@ -54,7 +54,6 @@ ul {
 header {
   display: flex;
   justify-content: center;
-  width: auto;
 }
 header .brandContainer,
 header .menuContainer {
@@ -68,6 +67,23 @@ header .menuContainer {
   margin: 0.5rem;
 }
 
+@media only screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  header .brandContainer,
+header .menuContainer {
+    border: 3px solid black;
+    box-shadow: 1px 1px black;
+    text-shadow: 0.5px 0.5px black;
+    width: 20%;
+    height: 2.5rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    margin: 0.5rem;
+  }
+}
 .contactWelcome {
   text-align: center;
 }
@@ -97,7 +113,13 @@ header .menuContainer {
 @media only screen and (min-width: 1024px) {
   .mapView {
     width: 652px;
-    margin-left: 11rem;
+    margin-left: 12rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .mapView {
+    width: 652px;
+    margin-left: 24.2rem;
   }
 }
 .alertS {
@@ -125,6 +147,20 @@ header .menuContainer {
     background-color: rgb(32, 33, 33);
     border-radius: 5%;
     margin-left: 12rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .alertS {
+    color: yellow;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  .alertS .alert {
+    width: 25%;
+    border: 1.5px solid yellow;
+    background-color: rgb(32, 33, 33);
+    border-radius: 5%;
+    margin-left: 33.5rem;
   }
 }
 .contactInfoContainer {
@@ -174,14 +210,31 @@ header .menuContainer {
 @media only screen and (min-width: 1024px) {
   .contactInfoContainer .contactInfo {
     text-align: center;
-    width: 25%;
+    width: 20%;
     margin-right: 0.5rem;
-    margin-left: 3rem;
+    margin-left: 8rem;
   }
   .contactInfoContainer .contactInfo .profilePicture {
     width: 60px;
     height: 60px;
-    margin-left: 3rem;
+    margin-left: 3.6rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .contactInfoContainer .contactInfo {
+    text-align: center;
+    width: 15%;
+    margin-right: 0.5rem;
+    margin-left: 13rem;
+  }
+  .contactInfoContainer .contactInfo .profilePicture {
+    width: 60px;
+    height: 60px;
+    margin-left: 4rem;
     border: 2px solid black;
     border-radius: 50%;
     overflow: hidden;
@@ -255,6 +308,27 @@ header .menuContainer {
   overflow-y: scroll;
   /* Add the ability to scroll */
 }
+@media only screen and (min-width: 420px) {
+  .field .frameOne {
+    margin-left: 0.6rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .field .frameOne {
+    margin-left: 1.2rem;
+    border-radius: 16px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .field .frameOne {
+    margin-left: 1.6rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .field .frameOne {
+    margin-left: 2rem;
+  }
+}
 .field .dbContent {
   overflow: hidden;
   text-align: center;
@@ -262,22 +336,6 @@ header .menuContainer {
   margin: 10px;
 }
 
-@media only screen and (min-width: 420px) {
-  .frameOne {
-    margin-left: 0.6rem;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .frameOne {
-    margin-left: 1.2rem;
-    border-radius: 16px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .frameOne {
-    margin-left: 1.6rem;
-  }
-}
 .menuBar {
   display: flex;
   justify-content: space-evenly;
